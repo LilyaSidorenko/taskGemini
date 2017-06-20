@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="tutorial">
+    <div id="js-close" class="tutorial__close"></div>
+
+    <div id="js-tutorial-wrapper" class="tutorial__wrapper">
+        <div class="tutorial__item step-1">
+            <div class="step-1__col">
+                <img id="js-animate-logo" src="assets/animation/000.png"   srcset="assets/@2x/animation/000.png 2x" class="step-1__animate">
+            </div>
+            <div class="step-1__col">
+                <img src="assets/logo.png" class="step-1__logo"  srcset="assets/@2x/logo.png 2x">
+                <p class="tutorial__text">Wipe duplicates off the face of your<br>
+                    Mac with Gemini 2. It’s fast, precise,<br>
+                    and adapts to the way way you use it.</p>
+            </div>
+        </div>
+        <div class="tutorial__item step-2">
+            <div id="js-image-shadow" class="step-2__wrapper">
+                <div class="step-2__shadow"></div>
+                <div class="step-2__shadow"></div>
+                <div class="step-2__shadow"></div>
+                <div class="step-2__shadow"></div>
+                <div class="step-2__shadow"></div>
+                <div class="step-2__shadow"></div>
+                <img src="assets/cover.jpg" srcset="assets/@2x/cover.jpg 2x" class="step-2__image">
+            </div>
+            <h1 id="js-changing-text" class="tutorial__title">Detects Duplicates</h1>
+            <p class="tutorial__text">Locate duplicates, even if they’re stashed in a folder far, far away.<br>
+                Gemini’s new algorithm is laser accurate at detecting useless copies.</p>
+        </div>
+        <div class="tutorial__item step-3">
+            <div id="js-rotate-photos" class="step-3__wrapper">
+                <img src="assets/photo-1.jpg" srcset="assets/@2x/photo-1.jpg 2x" width="245">
+                <img src="assets/photo-2.jpg" srcset="assets/@2x/photo-2.jpg 2x" width="245">
+                <img src="assets/photo-3.jpg" srcset="assets/@2x/photo-3.jpg 2x" width="245">
+            </div>
+            <div id="js-appearance-text">
+
+                <h1 class="tutorial__title">Searches for Similars</h1>
+
+                <p class="tutorial__text">Identical or not, copies are a waste of space. Now, Gemini 2<br>
+                    searches for files that look alike — and puts them into spotlight.</p>
+            </div>
+        </div>
+        <div  id="js-media-items" class="tutorial__item step-4">
+            <div class="step-4__wrapper tutorial__step-light">
+                <img src="assets/photos.png"  srcset="assets/@2x/photos.png 2x" width="160">
+                <img id="js-itunes" src="assets/itunes.png" srcset="assets/@2x/itunes.png 2x" width="138">
+
+            <h1 class="tutorial__title">Scans Photos & iTunes</h1>
+            <p class="tutorial__text">
+                Most of your duplicates are probably music files and pics. Gemini 2 finds<br>
+                them in their natural habitat your iTunes and Photos libraries.</p>
+            </div>
+
+        </div>
+        <div class="tutorial__item step-5">
+            <div id="js-auto-icons" class="step-5__wrapper tutorial__step-light">
+                <div class="step-5__col">
+                    <img src="assets/icons/1.png" srcset="assets/@2x/icons/1.png 2x" width="56">
+                    <img src="assets/icons/2.png" srcset="assets/@2x/icons/2.png 2x" width="40">
+                    <img src="assets/icons/3.png" srcset="assets/@2x/icons/3.png 2x" width="40">
+                    <img src="assets/icons/7.png" srcset="assets/@2x/icons/7.png 2x" width="52">
+                    <img src="assets/icons/8.png" srcset="assets/@2x/icons/8.png 2x" width="40">
+                </div>
+                <div class="step-5__col-s">
+                    <img id="js-autoselect" src="assets/autoselect.png" srcset="assets/@2x/autoselect.png 2x" width="153">
+                </div>
+                <div class="step-5__col">
+                    <img src="assets/icons/4.png" srcset="assets/@2x/icons/4.png 2x" width="40">
+                    <img src="assets/icons/5.png" srcset="assets/@2x/icons/5.png 2x" width="40">
+                    <img src="assets/icons/6.png" srcset="assets/@2x/icons/6.png 2x" width="52">
+                    <img src="assets/icons/9.png" srcset="assets/@2x/icons/9.png 2x" width="56">
+                    <img src="assets/icons/10.png" srcset="assets/@2x/icons/10.png 2x" width="40">
+                </div>
+            <div id="js-hiding-text">
+                <h1 class="tutorial__title">And Learns from You</h1>
+                <p class="tutorial__text">
+                    As you see Gemini 2, it learns to select and delete<br>
+                    duplicates the way <em>you</em> do. Almost like it's human.</p>
+            </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="tutorial__nav">
+        <span class="tutorial__counter">
+            <span id="js-counter">1</span> of 5
+        </span>
+        <a id="js-link-next" class="tutorial__link">Next</a>
+    </div>
+</div>
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>

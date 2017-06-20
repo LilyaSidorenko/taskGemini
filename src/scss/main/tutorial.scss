@@ -1,0 +1,116 @@
+// Optional styles
+body {
+  background: #faebd7;
+}
+//
+
+.tutorial {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  width: 660px;
+  height: $containerHeight;
+  margin: -$containerHeight /2 auto 0 auto;
+  border-radius: 4px;
+
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 0.5px;
+  overflow: hidden;
+  color: $mainColorText;
+  font-size: 14px;
+  line-height: 1.5;
+
+  background: $mainColorBg;
+  background: linear-gradient($lighterMainColorBg, $mainColorBg);
+
+  &__close {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+
+    width: 15px;
+    height: 15px;
+    background: url("/assets/close-x.png");
+    background-size: contain;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  &__wrapper {
+    height: 100%;
+    text-align: center;
+  }
+  &__step-light {
+    color: $darkColorText;
+    background: $lightColorBg;
+    background: linear-gradient($lightColorBg, $darkerColorBg);
+
+    .tutorial__title {
+      color: $darkColorText;
+    }
+  }
+  &__title {
+    margin: 15px 0;
+
+    color: $titleColorText;
+    font-family: "Lato", "Helvetica Neue", sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+
+  }
+  &__item {
+    float: left;
+    height: 100%;
+    width: 660px;
+  }
+
+  &__nav {
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    width: 100%;
+
+    text-align: center;
+    font-size: 13px;
+  }
+
+  &__link {
+    position: absolute;
+    right: 15px;
+
+    color: $linkColor;
+    text-decoration: none;
+    cursor: pointer;
+
+    &_disabled {
+      pointer-events: none;
+      opacity: 0.3;
+    }
+
+    &:after {
+      content: '';
+      height: 13px;
+      width: 7px;
+      display: inline-block;
+      margin-left: 10px;
+
+      background: url("/assets/next.png");
+      vertical-align: middle;
+      background-size: contain;
+    }
+    &_light {
+      color: $darkLinkColor;
+
+      &:after {
+        background: url("/assets/next-dark.png");
+        background-size: contain;
+      }
+    }
+  }
+  &__counter {
+    color: $lighterMainColorBg;
+  }
+}

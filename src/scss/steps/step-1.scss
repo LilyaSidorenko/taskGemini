@@ -1,0 +1,23 @@
+.step-1 {
+
+  &__col {
+    width: 49%;
+    display: inline-block;
+
+    text-align: left;
+    vertical-align: middle;
+
+    &:first-child {
+      height: inherit;
+    }
+  }
+  &__animate {
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 380px;
+    height: $animationHeight;
+    margin-top: -$animationHeight/2;
+  }
+}

@@ -1,0 +1,23 @@
+.step-4 {
+  text-align: center;
+
+  overflow-x: hidden;
+  padding-right: $step4Offset;
+  height: $step4Height;
+  margin-top: -$step4Height/2;
+  padding-top: $step4Height/2;
+  border-bottom-left-radius: $step4Height;
+  border-top-left-radius: $step4Height;
+
+
+  &__wrapper {
+    height: $containerHeight;
+    padding-top: 40px;
+    padding-left: $step4Offset*2;
+
+  }
+
+  img:first-child {
+    margin-right: $step4Offset;
+  }
+}
